@@ -1,3 +1,128 @@
 * {
     box-sizing: border-box;
 }
+
+body {
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Montserrat', serif;
+}
+
+.heading {
+    margin-top: 100px;
+}
+
+.profile img {
+    width: 150px;
+    border-radius: 20px;
+}
+
+.profile h3 {
+    font-size: 1.5rem;    
+    margin-bottom: 0;
+    
+}
+
+.details {
+    font-size: 14px;
+    color: #BDBDBD;;
+    margin-top: 5px;
+    
+}
+
+.flex-heading {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 28px;
+}
+
+.flex-heading div {
+    background-color: #E5E5E5;
+    width: 100px;
+    height: 67px;
+    border-radius: 12px;
+    justify-content: center;
+}
+
+.numbers {
+    margin-bottom: 0;
+}
+
+main {
+    margin-top: 60px;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-areas: 
+    'one two two'
+    'three three four'
+    'five six four';
+    gap: 2rem;
+}
+
+.images {
+    width: 100%;
+   height: 100%;
+    border-radius: 12px;
+    object-fit: fill;
+}
+
+.bed {
+    grid-area: one;
+}
+
+.living {
+    grid-area: two;
+   
+}
+
+.tub {
+    grid-area: three;
+}
+
+.lamp {
+    grid-area: four;
+}
+
+.plant {
+    grid-area: five;
+}
+
+.dine {
+    grid-area: six;
+}
+
+footer {
+    margin-top: 100px;
+    color: #0006;
+}
+
+footer a {
+    color: #0006;
+}
+
+footer a:nth-child(2) {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 450px) {
+    body {
+        width: 90%;
+    }
+    .heading {
+        margin-top: 40px;
+    }
+    .flex-heading div {
+        width: 90px;
+        height: 70px;
+        font-size: 14px;
+     }
+    main {
+        gap: 10px;
+        margin-top: 45px;
+    }   
+    footer {
+        margin-top: 85px;
+    }
+}
